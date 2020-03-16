@@ -1,3 +1,258 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* Reset */
 
+
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+	max-width: 100%;
+}
+
+/* General Styles */
+
+body, html {
+	line-height: 2;
+	height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+section {
+	margin: 4%, 0;
+}
+
+/* Header Styles*/
+
+.navigation {
+	display: flex;
+	justify-content: space-around;
+}
+
+.links {
+	display:flex;
+	justify-content: space-between;
+	width: 60%;
+	
+}
+
+.links a {
+	text-decoration: none;
+	color: dimgray;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+}
+
+#title {
+	display: flex;
+	justify-content:space-between;
+	justify-content: center;
+	margin: 4% 0;
+}
+
+.header1 {
+	display: flex;
+	width: 50%;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+h1 {
+	display: flex;
+	flex-flow: column wrap;
+	font-size: 75px;
+	width: 100%;
+	text-align: center;
+	line-height: 75px;
+}
+
+.header1 a {
+	border: 1px solid black;
+	padding: 0 6%;
+	margin-top: -5%;
+}
+
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+.image-container img{
+	width: 60%;
+}
+
+/* About Section */
+
+
+#vertical-line {
+	width: 90%;
+	margin: 0 auto;
+	height: 1px;
+	background-color: black;
+}
+
+#vertical-line2 {
+	width: 90%;
+	margin: 0 auto;
+	height: 1px;
+	background-color: black;
+}
+
+#top-content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	margin: 4% 0;
+}
+
+.top-content1 {
+	width: 42%;
+}
+
+.top-content2 {
+	width: 42%;
+}
+
+.top-content-image {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 4%;
+}
+
+.top-content-image img {
+	width: 89%;
+}
+
+/* Bottom Section */
+
+#bottom-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-bottom: 4%;
+}
+
+.bottom-content1 {
+	width: 26%;
+}
+
+.bottom-content2 {
+	width: 26%;
+}
+
+.bottom-content3 {
+	width: 26%;
+}
+
+/* Footer Section */
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 5%;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin: 3% 0;
+}
+
+@media (max-width: 820px) {
+	.image-container {
+		display: none;
+	}
+
+	.header1 a {
+		padding: 0 12%;
+	}
+
+	.navigation {
+		flex-direction: column-reverse;
+	}
+
+	.links {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.logo {
+		width: 100%;
+		margin-bottom: 2%;
+	}
+}
+
+@media (max-width: 590px) {
+	.image-container {
+		display: none;
+	}
+
+	.navigation {
+		flex-direction: column-reverse wrap;
+	}
+
+	.links {
+		display: flex;
+		flex-flow: column wrap;
+		width: 100%;
+		text-align: center;
+	}
+
+	.links a {
+		width: 100%;
+		border-bottom: 1px solid dimgray;
+	}
+
+	.links:nth-child(1) {
+		border-top: 1px solid dimgray;
+	}
+
+	#top-content {
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.top-content1 {
+		width: 90%;
+	}
+
+	.top-content2 {
+		width: 90%;
+	}
+
+	#bottom-content {
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.bottom-content1 {
+		width: 90%;
+	}
+
+	.bottom-content2 {
+		width: 90%;
+	}
+
+	.bottom-content3 {
+		width: 90%;
+	}
+
+}
 
